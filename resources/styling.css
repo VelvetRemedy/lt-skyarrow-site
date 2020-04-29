@@ -1,0 +1,168 @@
+/*spaces to remove in compiled: 8*/
+@font-face {
+  font-family: "Manrope";
+  src: url("font/static/Mantope-Light.ttf") format("ttf");
+}
+/*
+::-webkit-scrollbar {
+   width: 15px;
+}
+::-webkit-scrollbar-track {
+   background: @l-lightblue;
+}
+::-webkit-scrollbar-thumb {
+   background: #bbbbbb;
+   //need to manually change the css, because the it isnt "element:hover", instead
+   //there is a space like "element :hover"
+   :hover {
+      background: #cccccc;
+   }
+}
+::-webkit-scrollbar-button {
+   color: @l-blue;
+   background-color: @l-darkblue;
+}
+*/
+html {
+  background-color: #ffffff;
+  font-family: Manrope, Arial, sans-serif;
+  background-color: #8cc7e7;
+}
+.main {
+  padding-top: 50px;
+  padding-left: 15%;
+  padding-right: 15%;
+  max-width: 1500px;
+}
+#navbar-spacer {
+  width: 5%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  transition-duration: 0.2s;
+}
+.navbar-shadow {
+  background-color: #8cc7e7;
+  color: #ffffff;
+  box-shadow: 0px -30px 50px #000000;
+}
+.navbar-shadow a:hover {
+  /*   REMOVE SPACES HERE  */
+  background-color: #9adaf3;
+}
+.navbar-shadow a:active {
+  background-color: #adddf0;
+}
+.navbar {
+  /* remove here */
+  z-index: 300;
+  color: #000000;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: #414141; /*SKY*/
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #ffffff9f; /*SKY*/
+}
+.navbar a:hover {
+  /*   REMOVE SPACES HERE  */
+  background-color: #ffffff5e; /*SKY*/
+  color: #333333;
+}
+.navbar a:active {
+  color: #444444;
+}
+.mainpageheader img {
+  display: block;
+  margin: -8px;
+}
+.block.button {
+  /* remove here */
+  /* remove here */
+  text-decoration: none;
+  color: #0d74db;
+  position: relative;
+  z-index: 200;
+  color: #000000;
+  padding: 14px 16px;
+}
+.block.button:hover {
+  /*   REMOVE SPACES HERE  */
+  background-color: #9adaf3;
+}
+.block.button:active {
+  background-color: #adddf0;
+}
+.link {
+  /* remove here */
+  text-decoration: none;
+  color: #0d74db;
+  position: relative;
+  z-index: 200;
+}
+.link:hover {
+  /*   REMOVE SPACES HERE  */
+  background-color: #9adaf3;
+}
+.link:active {
+  background-color: #adddf0;
+}
+.imagemask {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.2s;
+}
+/*
+.latlogo {
+   position: relative;
+   z-index: 5 !important;
+   width: 100px;
+   padding: 10px 15px;
+   min-width: 10px;
+   max-width: 750px;
+}
+*/
+.pink {
+  color: #ff00ff;
+}
+.selected {
+  background-color: #adddf0 !important;
+}
+.tooltip {
+  position: relative;
+  z-index: 100;
+}
+html {
+   overflow-x: hidden;
+
+}
+.foot {
+   font-size: 12px;
+   bottom: 0;
+   left: 0;
+   border-top: 1px solid #333333;
+   /*box-shadow: 0px 30px 200px #000000;*/
+   padding: 14px 26px;
+}
+pre {
+   display: inline;
+}
+#headerlogo {
+   position: absolute;
+   top: 16px;
+   left: 64px;
+   width: 20%
+}
+/*#footspace {
+   height: 100%;
+}*/
