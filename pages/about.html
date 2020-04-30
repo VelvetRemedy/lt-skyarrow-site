@@ -1,183 +1,226 @@
-<!DOCTYPE html>
-<html>
-<title>Love & Tolerance</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="../resources/img/pack.ico">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Full height image header */
-/* .bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("resources/img/background1.png");
-  min-height: 100%;
-} */
-
-#team {
-    background-image: url("../resources/img/panorama_1.png");
-    background-repeat: no-repeat;
+<html><head><title>Love &amp; Tolerance</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../resources/img/pack.ico">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../resources/Stylesheets/about-style.css">
+  <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+  
+  /* Full height image header */
+  /* .bgimg-1 {
+    background-position: center;
     background-size: cover;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-
-.active .icon32.icon-star-on, .icon32.icon-star-on, .icon32.icon-star-on:hover {
-    background-position : -448px -96px;
-}
-.icon.icon-blue, .icons-blue .icon {
-    background-color: blue;
-    width: 16px;
-    height: 16px;
-    display: block;
-}
-.icon:hover:after {
-    content: "Your tooltip";
-    display: block;
-    position: relative;
-    top: -16px;
-    right: -16px;
-    width: 100px;
-    background: lightblue;
-}
-</style>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-    <div class="w3-bar" id="myNavbar">
-      <a href="../index.html" class="w3-bar-item w3-button w3-wide"><img src="../resources/img/pack.png"></a>
-      <!-- Centered navbar links -->
-      <div class="w3-display-topmiddle w3-hide-small">
-        <a href="../pages/about.html" class="w3-bar-item w3-button">About Us</a>
-        <a href="#team" class="w3-bar-item w3-button">Add-on Packs</a>
-        <a href="../pages/showcase.html" class="w3-bar-item w3-button">Showcase</a>
-      </div>
-      <!-- Right-sided navbar links -->
-      <a href="download.html" class="w3-btn w3-right w3-pink w3-round-large w3-text-white" style="margin-right:20px;margin-top:20px;">Download</a>
-    </div>
-  </div>
-<div class="w3-container" style="padding:128px 16px" id="team">
-    <h3 class="w3-center">THE TEAM</h3>
-    <!-- <div class="w3-bar">
-      <button class="w3-button w3-pink" onclick="openTeam('Active')">Active</button>
-      <button class="w3-button w3-pink" onclick="openTeam('Past')">Past</button>
-    </div> -->
-    <div id="Active" class="w3-container team">
-      <div class="w3-row-padding" style="margin-top:64px">
-        <div class="w3-col m6 l1 w3-margin-bottom"></div>
-        <div class="w3-col m6 l2 w3-margin-bottom">
-          <div class="w3-card w3-light-blue">
-            <img src="../resources/img/velvet-remedy.png" alt="Velvet Remedy" style="width:100%">
-            <div class="w3-container">
-              <h4>Velvet Remedy</h4>
-              <p class="w3-opacity">Project Lead<br>Primary Texture Artist</p>
-              <p>
-                <a href = "mailto:velvetremedy@love-tolerance.com"><i class="fa fa-envelope"></i></a>
-                <i id="discord" class="fab fa-discord"></i> Velvet Remedy#8880
-              </p>
-            </div>
-          </div>
+    background-image: url("resources/img/background1.png");
+    min-height: 100%;
+  } */
+  
+  #team {
+      background-image: url("../resources/img/panorama_1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+  
+  .active .icon32.icon-star-on, .icon32.icon-star-on, .icon32.icon-star-on:hover {
+      background-position : -448px -96px;
+  }
+  .icon.icon-blue, .icons-blue .icon {
+      background-color: blue;
+      width: 16px;
+      height: 16px;
+      display: block;
+  }
+  .icon:hover:after {
+      content: "Your tooltip";
+      display: block;
+      position: relative;
+      top: -16px;
+      right: -16px;
+      width: 100px;
+      background: lightblue;
+  }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+  <!-- Navbar (sit on top) -->
+  </head><body><div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a href="../index.html" class="w3-bar-item w3-button w3-wide"><img src="../resources/img/pack.png"></a>
+        <!-- Centered navbar links -->
+        <div class="w3-display-topmiddle w3-hide-small">
+          <a href="../pages/about.html" class="w3-bar-item w3-button">About Us</a>
+          <a href="#team" class="w3-bar-item w3-button">Add-on Packs</a>
+          <a href="../pages/showcase.html" class="w3-bar-item w3-button">Showcase</a>
         </div>
-        <div class="w3-col m6 l2 w3-margin-bottom">
-          <div class="w3-card w3-light-blue">
-            <img src="../resources/img/PCelestia.jpg" alt="PCelestia" style="width:100%">
-            <div class="w3-container">
-              <h4>PCelestia</h4>
-              <p class="w3-opacity">Website Developer<br>General Texture Artist</p>
-              <p>
-                <a href = "mailto:pcelestia@love-tolerance.com"><i class="fa fa-envelope"></i></a>
-                <i id="discord" class="fab fa-discord"></i> PCelestia#2864
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w3-col m6 l2 w3-margin-bottom">
-          <div class="w3-card w3-light-blue">
-            <img src="../resources/img/SolisLink.png" alt="ZeldaLinkAaron/SolisLink" style="width:100%">
-            <div class="w3-container">
-              <h4>ZeldaLinkAaron/SolisLink</h4>
-              <p class="w3-opacity">Models<br>Texture Artist<br></p>
-              <p>
-                <a href = "mailto:zeldalinkaaron@gmail.com"><i class="fa fa-envelope"></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w3-col m6 l2 w3-margin-bottom">
-          <div class="w3-card w3-light-blue">
-            <img src="../resources/img/bronydog.png" alt="Bronydog" style="width:100%">
-            <div class="w3-container">
-              <h4>Bronydog</h4>
-              <p class="w3-opacity">Models<br>Texture Artist</p>
-              <p>
-                <a href = "mailto:bronydog@love-tolerance.com"><i class="fa fa-envelope"></i></a>
-                <i id="discord" class="fab fa-discord"></i> bronydog#1620
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w3-col m6 l2 w3-margin-bottom">
-          <div class="w3-card w3-light-blue">
-            <img src="../resources/img/vivian.png" alt="Vivian" style="width:100%">
-            <div class="w3-container">
-              <h4>Vivian</h4>
-              <p class="w3-opacity">Pack Maintenance<br>CTM Manager</p>
-              <p>
-                <a href = "mailto:vivian@love-tolerance.com"><i class="fa fa-envelope"></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w3-col m6 l1 w3-margin-bottom"></div>
-      </div>
-      <div class="w3-row-padding" style="margin-top:64px">
-        <div class="w3-col m6 l4 w3-margin-bottom"></div>
-        <div class="w3-col m6 l2 w3-margin-bottom">
-          <div class="w3-card w3-light-blue">
-            <img src="../resources/img/sollace.png" alt="Sollace" style="width:100%">
-            <div class="w3-container">
-              <h4>Sollace</h4>
-              <p class="w3-opacity">GitHub Manager<br>Pack Maintenance.</p>
-              <p>
-                <i id="discord" class="fab fa-discord"></i> Sollace#3780
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w3-col m6 l2 w3-margin-bottom">
-          <div class="w3-card w3-light-blue">
-            <img src="../resources/img/skyarrow.png" alt="SkyArrow" style="width:100%">
-            <div class="w3-container">
-              <h4>SkyArrow</h4>
-              <p class="w3-opacity">Website Design<br>Website Developer</p>
-              <p>
-                <a href = "mailto:skyarrow25@gmail.com"><i class="fa fa-envelope"></i></a>
-                <i id="discord" class="fab fa-discord"></i> SkyArrow#9143
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="w3-col m6 l4 w3-margin-bottom"></div>
+        <!-- Right-sided navbar links -->
+        <a href="download.html" class="w3-btn w3-right w3-pink w3-round-large w3-text-white" style="margin-right:20px;margin-top:20px;">Download</a>
       </div>
     </div>
-    <div class="w3-container">
-      <div class="w3-card-3" style="width:50%;">
+  <div class="w3-container" style="padding:128px 16px" id="team">
+      <h3 class="w3-center">THE TEAM</h3>
+      <!-- <div class="w3-bar">
+        <button class="w3-button w3-pink" onclick="openTeam('Active')">Active</button>
+        <button class="w3-button w3-pink" onclick="openTeam('Past')">Past</button>
+      </div> -->
+      <div id="Active" class="w3-container team">
+        <div class="w3-row-padding" style="margin-top:64px">
+          <div class="w3-col m6 l1 w3-margin-bottom"></div>
+          <div class="w3-col m6 l2 w3-margin-bottom">
+            <div class="w3-card w3-light-blue">
+              <img src="../resources/img/velvet-remedy.png" alt="Velvet Remedy" style="width:100%">
+              <div class="w3-container">
+                <h4>Velvet Remedy</h4>
+                <p class="w3-opacity">Project Lead<br>Primary Texture Artist</p>
+                <p>
+                  <a href="mailto:velvetremedy@love-tolerance.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  <i id="discord" class="fab fa-discord" aria-hidden="true"></i> Velvet Remedy#8880
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m6 l2 w3-margin-bottom">
+            <div class="w3-card w3-light-blue">
+              <img src="../resources/img/PCelestia.jpg" alt="PCelestia" style="width:100%">
+              <div class="w3-container">
+                <h4>PCelestia</h4>
+                <p class="w3-opacity">Website Developer<br>General Texture Artist</p>
+                <p>
+                  <a href="mailto:pcelestia@love-tolerance.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  <i id="discord" class="fab fa-discord" aria-hidden="true"></i> PCelestia#2864
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m6 l2 w3-margin-bottom">
+            <div class="w3-card w3-light-blue">
+              <img src="../resources/img/SolisLink.png" alt="ZeldaLinkAaron/SolisLink" style="width:100%">
+              <div class="w3-container">
+                <h4>ZeldaLinkAaron/SolisLink</h4>
+                <p class="w3-opacity">Models<br>Texture Artist<br></p>
+                <p>
+                  <a href="mailto:zeldalinkaaron@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m6 l2 w3-margin-bottom">
+            <div class="w3-card w3-light-blue">
+              <img src="../resources/img/bronydog.png" alt="Bronydog" style="width:100%">
+              <div class="w3-container">
+                <h4>Bronydog</h4>
+                <p class="w3-opacity">Models<br>Texture Artist</p>
+                <p>
+                  <a href="mailto:bronydog@love-tolerance.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  <i id="discord" class="fab fa-discord" aria-hidden="true"></i> bronydog#1620
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m6 l2 w3-margin-bottom">
+            <div class="w3-card w3-light-blue">
+              <img src="../resources/img/vivian.png" alt="Vivian" style="width:100%">
+              <div class="w3-container">
+                <h4>Vivian</h4>
+                <p class="w3-opacity">Pack Maintenance<br>CTM Manager</p>
+                <p>
+                  <a href="mailto:vivian@love-tolerance.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m6 l1 w3-margin-bottom"></div>
+        </div>
+        <div class="w3-row-padding" style="margin-top:64px">
+          <div class="w3-col m6 l4 w3-margin-bottom"></div>
+          <div class="w3-col m6 l2 w3-margin-bottom">
+            <div class="w3-card w3-light-blue">
+              <img src="../resources/img/sollace.png" alt="Sollace" style="width:100%">
+              <div class="w3-container">
+                <h4>Sollace</h4>
+                <p class="w3-opacity">GitHub Manager<br>Pack Maintenance.</p>
+                <p>
+                  <i id="discord" class="fab fa-discord" aria-hidden="true"></i> Sollace#3780
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m6 l2 w3-margin-bottom">
+            <div class="w3-card w3-light-blue">
+              <img src="../resources/img/skyarrow.png" alt="SkyArrow" style="width:100%">
+              <div class="w3-container">
+                <h4>SkyArrow</h4>
+                <p class="w3-opacity">Website Design<br>Website Developer</p>
+                <p>
+                  <a href="mailto:skyarrow25@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  <i id="discord" class="fab fa-discord" aria-hidden="true"></i> SkyArrow#9143
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col m6 l4 w3-margin-bottom"></div>
+        </div>
+      </div>
+      <div class="w3-container">
+        <div class="w3-row w3-center">
+          <div class="w3-col l6"><div class="container-discord">
+                <div class="wrapper-discord">
+                  <h5 class="header-discord">
+                    If you want to see textures before they are released and 
+                    give your feedback during the development process, 
+                    please join our discord.
+                  </h5>
+                  <div class="content-discord">
+                    <div class="icon-discord" style="background-image: url('../resources/img/discord.png?size=128');">
+                  </div>
+                  <div class="guildInfo-discord" style="flex: 1 1 auto;">
+                      <div class="guildNameWrapper-discord">
+                        <span class="guildName-discord">Love &amp; Tolerance</span>
+                      </div>
+                  </div>
+                  <a href="https://discord.gg/fxNMGvm" class="button button-discord">
+                    <div class="contents-discord">Join</div>
+                  </a>
+                </div>
+              </div>
+            </div></div>
+          <div class="w3-col l6"><div class="container-discord">
+                <div class="wrapper-discord">
+                  <h5 class="header-discord">
+                    If you want the absolute latest version of the pack
+                    it is on our GitHub.
+                    <br>
+                    &nbsp;
+                  </h5>
+                  <div class="content-discord">
+                    <div class="icon-discord" style="background-image: url('../resources/img/github.png?size=128');">
+                  </div>
+                  <div class="guildInfo-discord" style="flex: 1 1 auto;">
+                      <div class="guildNameWrapper-discord">
+                        <span class="guildName-discord">Love &amp; Tolerance</span>
+                      </div>
+                  </div>
+                  <a href="https://github.com/Love-and-Tolerance/Love-and-Tolerance" class="button button-discord">
+                    <div class="contents-discord">Go To</div>
+                  </a>
+                </div>
+              </div>
+            </div></div>
+        </div>
         <table>
-          <tr>
+          <tbody><tr>
             <td>
-              <div class="w3-container w3-pink">
+              <!-- <div class="w3-container w3-pink">
                 <p>
                   If you want to see textures before they are
                   <br>
@@ -187,10 +230,10 @@ body, html {
                 </p>
                   <img src="../resources/img/discord.png"></img>
                   <a href="https://discord.gg/fxNMGvm" class="w3-btn w3-green w3-round-large w3-text-white">Join</a>
-              </div>
-            </td>
+              </div> -->
+              </td>
             <td>
-              <div class="w3-container w3-pink">
+              <!-- <div class="w3-container w3-pink">
                 <p>
                   If you want the absolute latest version of the pack
                   <br>
@@ -200,114 +243,114 @@ body, html {
                 </p>
                   <img src="../resources/img/github.png"></img>
                   <a href="https://github.com/Love-and-Tolerance/Love-and-Tolerance" class="w3-btn w3-green w3-round-large w3-text-white">Go To</a>
-              </div>
-            </td>
+              </div> -->
+              </td>
           </tr>
-        </table>
+        </tbody></table>
+      </div>
+      <!-- <div class="w3-row-padding">
+          <div class="w3-container w3-card w3-light-blue w3-topbar w3-bottombar w3-border-black w3-round-large" style="width:30%">
+            <h4 class="w3-text-black" style="text-shadow:1px 1px 0 #444">
+                If you want to see textures before they are released and give your feedback during the development process, 
+                please join our discord. 
+            </h4>
+            <br>
+            <div class="w3-container w3-card w3-pink w3-topbar w3-bottombar w3-border-pink w3-round-large" style="width:65%">
+                <table>
+                    <tr>
+                        <td><img src="../resources/img/pack.png"></td>
+                        <td>&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <h4 style="text-shadow:1px 1px 0 #444">
+                                Love & Tolerance
+                            </h4>
+                        </td>
+                        <td>
+                            <a href="https://discord.gg/fxNMGvm" class="w3-btn w3-green w3-round-large w3-text-white" style="margin-left:40px;margin-top:40px;padding-left:20px;padding-right:20px">Join</a>
+                        </td>
+                    </tr>
+                </table>         
+                <br>
+            </div>
+            <br>
+          </div>
+          <div class="w3-container w3-card w3-light-blue w3-topbar w3-bottombar w3-border-black w3-round-large" style="width:30%">
+            <h4 class="w3-text-black" style="text-shadow:1px 1px 0 #444">
+                If you want to see textures before they are released and give your feedback during the development process, 
+                please join our discord. 
+            </h4>
+            <br>
+            <div class="w3-container w3-card w3-pink w3-topbar w3-bottombar w3-border-pink w3-round-large" style="width:65%">
+                <table>
+                    <tr>
+                        <td><img src="../resources/img/pack.png"></td>
+                        <td>&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <h4 style="text-shadow:1px 1px 0 #444">
+                                Love & Tolerance
+                            </h4>
+                        </td>
+                        <td>
+                            <a href="https://discord.gg/fxNMGvm" class="w3-btn w3-green w3-round-large w3-text-white" style="margin-left:40px;margin-top:40px;padding-left:20px;padding-right:20px">Join</a>
+                        </td>
+                    </tr>
+                </table>         
+                <br>
+            </div>
+            <br>
+          </div>
+      </div> -->
+      
+    
+  </div>
+  
+  <div class="w3-container w3-light-blue w3-opacity-min" id="specialthanks">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SPECIAL THANKS</span></h5>
+      <p>This resource pack has come along way and has been touched by many different people, I would like to make sure that
+         each and every one of these people is credited. If you have worked on this pack and do not see your name on the list
+         please <a href="mailto:velvetremedy@love-tolerance.com">contact me</a> to get you added.</p>
+      <h4>So, without further ado, I would like to thank:</h4>
+      <div class="w3-panel w3-leftbar w3-light-grey">
+        <ul>
+          <li><b>Arekuzu</b> for creating the texture pack.</li>
+          <li><b>Hazzat</b> for general updates.</li>
+          <li><b>Hawkseye21</b> for fancy MCPatcher features and general updates.</li>
+          <li><b>Outa</b> for making the hunger bar.</li>
+          <li><b>HeadPikachu</b> for the liquids and various mobs.</li>
+          <li><b>Lphemphill</b> for villager voices.</li>
+          <li><b>MehStrongBadMeh</b> for assisting with the pack.</li>
+          <li><b>PandaTork</b> for the main screen logo.</li>
+          <li><b>Bronydog</b> for general texture updates and variant texture template.</li>
+          <li><b>SolisLink</b> for general texture and model updates.</li>
+          <li><b>Velvet Remedy</b> for general texture and model updates.</li>
+          <li><b>Vivian</b> for general maintenance and ctm fixes.</li>
+          <li><b>Sollace</b> for managing our GitHub and file cleanup.</li>
+          <li><b>PCelestia</b> for GitHub management and help with Add-ons.</li>
+          <li><b>SkyArrow</b> for developing our website.</li>
+          <li><b><a href="https://fifteen.ai/">Fifteen.ai</a></b> for the Fluttershy synthesized voice</li> 
+        </ul>
       </div>
     </div>
-    <!-- <div class="w3-row-padding">
-        <div class="w3-container w3-card w3-light-blue w3-topbar w3-bottombar w3-border-black w3-round-large" style="width:30%">
-          <h4 class="w3-text-black" style="text-shadow:1px 1px 0 #444">
-              If you want to see textures before they are released and give your feedback during the development process, 
-              please join our discord. 
-          </h4>
-          <br>
-          <div class="w3-container w3-card w3-pink w3-topbar w3-bottombar w3-border-pink w3-round-large" style="width:65%">
-              <table>
-                  <tr>
-                      <td><img src="../resources/img/pack.png"></td>
-                      <td>&nbsp;&nbsp;&nbsp;</td>
-                      <td>
-                          <h4 style="text-shadow:1px 1px 0 #444">
-                              Love & Tolerance
-                          </h4>
-                      </td>
-                      <td>
-                          <a href="https://discord.gg/fxNMGvm" class="w3-btn w3-green w3-round-large w3-text-white" style="margin-left:40px;margin-top:40px;padding-left:20px;padding-right:20px">Join</a>
-                      </td>
-                  </tr>
-              </table>         
-              <br>
-          </div>
-          <br>
-        </div>
-        <div class="w3-container w3-card w3-light-blue w3-topbar w3-bottombar w3-border-black w3-round-large" style="width:30%">
-          <h4 class="w3-text-black" style="text-shadow:1px 1px 0 #444">
-              If you want to see textures before they are released and give your feedback during the development process, 
-              please join our discord. 
-          </h4>
-          <br>
-          <div class="w3-container w3-card w3-pink w3-topbar w3-bottombar w3-border-pink w3-round-large" style="width:65%">
-              <table>
-                  <tr>
-                      <td><img src="../resources/img/pack.png"></td>
-                      <td>&nbsp;&nbsp;&nbsp;</td>
-                      <td>
-                          <h4 style="text-shadow:1px 1px 0 #444">
-                              Love & Tolerance
-                          </h4>
-                      </td>
-                      <td>
-                          <a href="https://discord.gg/fxNMGvm" class="w3-btn w3-green w3-round-large w3-text-white" style="margin-left:40px;margin-top:40px;padding-left:20px;padding-right:20px">Join</a>
-                      </td>
-                  </tr>
-              </table>         
-              <br>
-          </div>
-          <br>
-        </div>
-    </div> -->
-    
-  
-</div>
-
-<div class="w3-container w3-light-blue w3-opacity-min" id="specialthanks">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SPECIAL THANKS</span></h5>
-    <p>This resource pack has come along way and has been touched by many different people, I would like to make sure that
-       each and every one of these people is credited. If you have worked on this pack and do not see your name on the list
-       please <a href = "mailto:velvetremedy@love-tolerance.com">contact me</a> to get you added.</p>
-    <h4>So, without further ado, I would like to thank:</h4>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <ul>
-        <li><b>Arekuzu</b> for creating the texture pack.</li>
-        <li><b>Hazzat</b> for general updates.</li>
-        <li><b>Hawkseye21</b> for fancy MCPatcher features and general updates.</li>
-        <li><b>Outa</b> for making the hunger bar.</li>
-        <li><b>HeadPikachu</b> for the liquids and various mobs.</li>
-        <li><b>Lphemphill</b> for villager voices.</li>
-        <li><b>MehStrongBadMeh</b> for assisting with the pack.</li>
-        <li><b>PandaTork</b> for the main screen logo.</li>
-        <li><b>Bronydog</b> for general texture updates and variant texture template.</li>
-        <li><b>SolisLink</b> for general texture and model updates.</li>
-        <li><b>Velvet Remedy</b> for general texture and model updates.</li>
-        <li><b>Vivian</b> for general maintenance and ctm fixes.</li>
-        <li><b>Sollace</b> for managing our GitHub and file cleanup.</li>
-        <li><b>PCelestia</b> for GitHub management and help with Add-ons.</li>
-        <li><b>SkyArrow</b> for developing our website.</li>
-      </ul>
-    </div>
   </div>
-</div>
-
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <p>Minecraft © Mojang AB</p>
-  <p>My Little Pony: Friendship is Magic © Hasbro, Inc.</p>
-  <p>Website developed by SkyArrow</p>
-</footer>
-
-<script>
-  function openTeam(teamType) {
-    var i;
-    var x = document.getElementsByClassName("team");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+  
+  
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <p>Minecraft © Mojang AB</p>
+    <p>My Little Pony: Friendship is Magic © Hasbro, Inc.</p>
+    <p>Website developed by SkyArrow</p>
+  </footer>
+  
+  <script>
+    function openTeam(teamType) {
+      var i;
+      var x = document.getElementsByClassName("team");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      document.getElementById(teamType).style.display = "block";  
     }
-    document.getElementById(teamType).style.display = "block";  
-  }
-  </script>
-</body>
-</html>
+    </script>
+  
+  </body></html>
