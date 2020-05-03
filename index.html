@@ -4,7 +4,7 @@
 <title>Love & Tolerance</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="resources/img/pack.ico">
+<link rel="icon" href="resources/img/icons/pack.ico">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -34,11 +34,11 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="resources/img/pack.png"></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-wide"><img src="resources/img/icons/pack.png"></a>
     <!-- Centered navbar links -->
     <div class="w3-display-topmiddle w3-hide-small">
       <a href="pages/about.html" class="w3-bar-item w3-button">About Us</a>
-      <a href="#team" class="w3-bar-item w3-button">Add-on Packs</a>
+      <a href="pages/addons.html" class="w3-bar-item w3-button">Add-on Packs</a>
       <a href="pages/showcase.html" class="w3-bar-item w3-button">Showcase</a>
     </div>
     <!-- Right-sided navbar links -->
@@ -47,12 +47,10 @@ body, html {
 </div>
 <!-- Mane Page -->
 <div class="w3-display-container w3-center" id="home">
-    <img class="mySlides" src="resources/img/panorama_0-resize.png" style="width:100%;">
-    <!-- <img class="mySlides" src="resources/img/background5.png" style="width:100%;">
-    <img class="mySlides" src="resources/img/background3.png" style="width:100%"> -->
+    <img class="mySlides" src="resources/img/backgrounds/panorama_0-resize.png" style="width:100%;">
     <div class="w3-display-middle w3-wide">
         <h1 style="text-shadow:1px 1px 0 #444">
-         <img src="resources/img/logo.png">         
+         <img src="resources/img/icons/logo.png">         
         </h1>
         <a href="pages/downloads.html" class="w3-btn w3-pink w3-round-large w3-text-white">Download</a>
         <br>
@@ -62,24 +60,6 @@ body, html {
         <h4>mc.love-tolerance.com</h4>
     </div>
 </div>
-<!-- <div class="w3-display-container w3-center" id="home">
-  <img class="mySlides" src="resources/img/panorama_0-resize.png" style="width:100%;">
-  <div class="w3-half">
-      <div class="w3-display-left w3-wide" style="min-height:260px; padding-left:200px">
-          <h1 style="text-shadow:1px 1px 0 #444">
-            <img src="resources/img/logo.png">         
-          </h1>
-          <a href="pages/downloads.html" class="w3-btn w3-pink w3-round-large w3-text-white">Download</a>
-      </div>
-  </div>
-  <div class="w3-half">
-    <div class="w3-display-right w3-wide" style="min-height:260px; padding-right:200px">
-        <h1 style="text-shadow:1px 1px 0 #444">
-          <img src="resources/img/logo.png">         
-        </h1>
-        <a href="pages/downloads.html" class="w3-btn w3-pink w3-round-large w3-text-white">Download</a>
-    </div>
-</div> -->
 </div>
 
 <!-- Info Section -->
@@ -160,56 +140,15 @@ body, html {
   <p>Minecraft © Mojang AB</p>
   <p>My Little Pony: Friendship is Magic © Hasbro, Inc.</p>
   <p>Website developed by SkyArrow</p>
-  <p><a href="pinkiepie.org" style="color: rgb(255, 0, 128);">Shoutout to Velvet's awesome site!</a></p>
+  <p><a href="https://pinkiepie.org" style="color: rgb(255, 0, 128);">Shoutout to Velvet's awesome site!</a></p>
 </footer>
  
-<!-- <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-    carousel();
-    
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 4000);    
-    }
-
+<script>
     function play() {
         var audio = document.getElementById("audio");
         audio.play();
       }
-</script> -->
+</script>
 
 </body>
 </html>
