@@ -31,8 +31,63 @@ img {
     background-size: cover;
 }
 </style>
+<script>
+      function startTimer() {
+        setInterval(displayNextImage, 3000);
+    }
+
+    function displayPreviousImage() {
+        x = (x <= 0) ? images.length - 1 : x - 1;
+        document.getElementById("spring").src = images[x];
+        document.getElementById("blueui").src = images2[x];
+        document.getElementById("optifine").src = images3[x];
+        document.getElementById("3d").src = images4[x];
+        document.getElementById("classic").src = images5[x];
+        document.getElementById("bronydog").src = images6[x];
+        document.getElementById("altdoor").src = images7[x];
+        document.getElementById("alt3d").src = images8[x];
+    }
+
+    function displayNextImage() {
+        x = (x === images.length - 1) ? 0 : x + 1;
+        document.getElementById("spring").src = images[x];
+        document.getElementById("blueui").src = images2[x];
+        document.getElementById("optifine").src = images3[x];
+        document.getElementById("3d").src = images4[x];
+        document.getElementById("classic").src = images5[x];
+        document.getElementById("bronydog").src = images6[x];
+        document.getElementById("altdoor").src = images7[x];
+        document.getElementById("alt3d").src = images8[x];
+    }
+    var images = [], x = -1;
+    images[0] = "../resources/img/addons/spring/spring.png";
+    images[1] = "../resources/img/addons/spring/default.png";
+    var images2 = [], x = -1;
+    images2[0] = "../resources/img/addons/blue ui/blue.png";
+    images2[1] = "../resources/img/addons/blue ui/default.png";
+    var images3 = [], x = -1;
+    images3[0] = "../resources/img/addons/optifine addon/optifine.png";
+    images3[1] = "../resources/img/addons/optifine addon/deffault.png";
+    var images4 = [], x = -1;
+    images4[0] = "../resources/img/addons/3d models/3d.png";
+    images4[1] = "../resources/img/addons/3d models/default.png";
+    var images5 = [], x = -1;
+    images5[0] = "../resources/img/addons/Classic/classic.png";
+    images5[1] = "../resources/img/addons/Classic/classic w opt.png";
+    images5[2] = "../resources/img/addons/Classic/classic w var.png";
+    images5[3] = "../resources/img/addons/Classic/default.png";
+    var images6 = [], x = -1;
+    images6[0] = "../resources/img/addons/bronydog/bronydog.png";
+    images6[1] = "../resources/img/addons/bronydog/default.png";
+    var images7 = [], x = -1;
+    images7[0] = "../resources/img/addons/alt doors/alt.png";
+    images7[1] = "../resources/img/addons/alt doors/default.png";
+    var images8 = [], x = -1;
+    images8[0] = "../resources/img/addons/alt doors 3d/alt 3d.png";
+    images8[1] = "../resources/img/addons/alt doors 3d/alt.png";
+</script>
 </head>
-<body>
+<body onload = "startTimer()">
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -101,7 +156,7 @@ img {
             </b>
           </h4>
           <div class="w3-half w3-col m12 l6">
-            <img src="../resources/img/addons/spring/spring.png" style="height:100%; width:100%;">
+            <img id="spring" src="../resources/img/addons/spring/default.png" style="height:100%; width:100%;">
           </div>
           <div class="w3-half w3-col m12 l6">
             <h4 class="w3-text-black">
@@ -116,13 +171,13 @@ img {
       </div>
       <div class="w3-half">
         <div class="w3-card w3-white w3-container w3-opacity-min" style="min-height:100px">
-          <h2 class="w3-text-light-green" style="text-shadow:1px 1px 0 #444">
+          <h2 class="w3-text-light-blue" style="text-shadow:1px 1px 0 #444">
             <b>
               Blue UI Addon Pack (WIP)     
             </b>
           </h4>
           <div class="w3-half w3-col m12 l6">
-            <img src="../resources/img/addons/blue ui/blue.png" style="height:100%; width:100%;">
+            <img id="blueui" src="../resources/img/addons/blue ui/default.png" style="height:100%; width:100%;">
           </div>
           <div class="w3-half w3-col m12 l6">
             <h4 class="w3-text-black">
@@ -130,7 +185,6 @@ img {
                 A nice new fancy blue UI for Love and Tolerance, also works great with any other texture pack.        
               </b>
             </h4>
-            <br>
             <a href="https://github.com/Love-and-Tolerance/Blue-UI-Addon" class="w3-btn w3-pink w3-round-large w3-text-white">Get Here!</a>
           </div>
         </div>
@@ -139,13 +193,13 @@ img {
     <div class="w3-row-padding w3-center w3-margin-top">
       <div class="w3-half">
         <div class="w3-card w3-white w3-container w3-opacity-min" style="min-height:100px">
-          <h2 class="w3-text-light-green" style="text-shadow:1px 1px 0 #444">
+          <h2 class="w3-text-blue" style="text-shadow:1px 1px 0 #444">
             <b>
               Optifine Addon  
             </b>
           </h4>
           <div class="w3-half w3-col m12 l6">
-            <img src="../resources/img/addons/optifine addon/optifine.png" style="height:100%; width:100%;">
+            <img id="optifine" src="../resources/img/addons/optifine addon/deffault.png" style="height:100%; width:100%;">
           </div>
           <div class="w3-half w3-col m12 l6">
             <h4 class="w3-text-black">
@@ -160,13 +214,13 @@ img {
       </div>
       <div class="w3-half">
         <div class="w3-card w3-white w3-container w3-opacity-min" style="min-height:100px">
-          <h2 class="w3-text-light-green" style="text-shadow:1px 1px 0 #444">
+          <h2 class="w3-text-deep-orange" style="text-shadow:1px 1px 0 #444">
             <b>
               3D Models Addon Pack (WIP)    
             </b>
           </h4>
           <div class="w3-half w3-col m12 l6">
-            <img src="../resources/img/addons/3d models/3d.png" style="height:100%; width:100%;">
+            <img id="3d" src="../resources/img/addons/3d models/default.png" style="height:100%; width:100%;">
           </div>
           <div class="w3-half w3-col m12 l6">
             <h4 class="w3-text-black">
@@ -183,13 +237,13 @@ img {
     <div class="w3-row-padding w3-center w3-margin-top">
       <div class="w3-half">
         <div class="w3-card w3-white w3-container w3-opacity-min" style="min-height:100px">
-          <h2 class="w3-text-light-green" style="text-shadow:1px 1px 0 #444">
+          <h2 class="w3-text-lime" style="text-shadow:1px 1px 0 #444">
             <b>
               Classic Textures Addon      
             </b>
           </h4>
           <div class="w3-half w3-col m12 l6">
-            <img src="../resources/img/addons/Classic/classic.png" style="height:100%; width:100%;">
+            <img id="classic" src="../resources/img/addons/Classic/default.png" style="height:100%; width:100%;">
           </div>
           <div class="w3-half w3-col m12 l6">
             <h4 class="w3-text-black">
@@ -197,20 +251,19 @@ img {
                 Includes any of the original textures of the pack with variants for vanilla and Optifine.         
               </b>
             </h4>
-            <br>
             <a href="https://github.com/Love-and-Tolerance/Classic-Textures-Addon" class="w3-btn w3-pink w3-round-large w3-text-white">Get Here!</a>
           </div>
         </div>
       </div>
       <div class="w3-half">
         <div class="w3-card w3-white w3-container w3-opacity-min" style="min-height:100px">
-          <h2 class="w3-text-light-green" style="text-shadow:1px 1px 0 #444">
+          <h2 class="w3-text-dark-gray" style="text-shadow:1px 1px 0 #444">
             <b>
               Bronydog Textures Addon      
             </b>
           </h4>
           <div class="w3-half w3-col m12 l6">
-            <img src="../resources/img/addons/bronydog/bronydog.png" style="height:100%; width:100%;">
+            <img id="bronydog" src="../resources/img/addons/bronydog/default.png" style="height:100%; width:100%;">
           </div>
           <div class="w3-half w3-col m12 l6">
             <h4 class="w3-text-black">
@@ -227,13 +280,13 @@ img {
     <div class="w3-row-padding w3-center w3-margin-top">
       <div class="w3-half">
         <div class="w3-card w3-white w3-container w3-opacity-min" style="min-height:100px">
-          <h2 class="w3-text-light-green" style="text-shadow:1px 1px 0 #444">
+          <h2 class="w3-text-brown" style="text-shadow:1px 1px 0 #444">
             <b>
               Alt Door Addon Pack
             </b>
           </h4>
           <div class="w3-half w3-col m12 l6">
-            <img src="../resources/img/addons/alt doors/alt.png" style="height:100%; width:100%;">
+            <img id="altdoor" src="../resources/img/addons/alt doors/default.png" style="height:100%; width:100%;">
           </div>
           <div class="w3-half w3-col m12 l6">
             <h4 class="w3-text-black">
@@ -248,13 +301,13 @@ img {
       </div>
       <div class="w3-half">
         <div class="w3-card w3-white w3-container w3-opacity-min" style="min-height:100px">
-          <h2 class="w3-text-light-green" style="text-shadow:1px 1px 0 #444">
+          <h2 class="w3-text-brown" style="text-shadow:1px 1px 0 #444">
             <b>
               3D Alt Doors Addon Pack (WIP)
             </b>
           </h4>
           <div class="w3-half w3-col m12 l6">
-            <img src="../resources/img/addons/alt doors 3d/alt 3d.png" style="height:100%; width:100%;">
+            <img id="alt3d"src="../resources/img/addons/alt doors 3d/alt.png" style="height:100%; width:100%;">
           </div>
           <div class="w3-half w3-col m12 l6">
             <h4 class="w3-text-black">
