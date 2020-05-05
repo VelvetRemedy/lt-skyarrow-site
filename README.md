@@ -1,2 +1,2 @@
-# Alternate-Site
-Sky Arrow's version of the site
+# Love & Tolerance Website
+The website for this resource pack
