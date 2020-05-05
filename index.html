@@ -5,7 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="resources/img/icons/pack.ico">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="resources/Stylesheets/w3css.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <link rel="stylesheet" href="../resources/Stylesheets/index-style.css"> -->
@@ -218,14 +219,14 @@ body, html {
     </div>
     <div class="w3-quarter">
       <a onclick="play()" target="_blank">
-        <img src="resources/img/fluttershy.png" style="height:150px; width:200px;">
+        <img src="resources/img/fluttershy.png" style="height:100%; width:100%">
         <audio id="audio" src="resources/flutters.wav"></audio>
     </a>
       <p class="w3-large">Fluttershy's Review</p>
       <p>If you're still not convinced, click on Fluttershy to get her opinion.</p>
     </div>
     <div class="w3-quarter">
-      <iframe src="https://www.youtube.com/embed/X_TMtgjQuZI">
+      <iframe src="https://www.youtube.com/embed/X_TMtgjQuZI" style="height:250px; width:100%">
       </iframe>
       <p class="w3-large">Fun Fact</p>
       <p>This pack's style is used in Jan Animation Studios' popular animation "Don't Mine at Night"</p>
@@ -246,6 +247,7 @@ body, html {
 <script>
     function play() {
         var audio = document.getElementById("audio");
+        audio.volume = 0.1;
         audio.play();
       }
     /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
